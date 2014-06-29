@@ -4,8 +4,19 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+body
+{
+background-image:url('./images/subtle_halftone.png');
+background-repeat:repeat;
+}
+
 html, body, body>div.fullpage{
   height:100%;
+}
+
+.well{
+  height:85%;
 }
 
 body {
