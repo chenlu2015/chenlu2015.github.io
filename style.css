@@ -1,0 +1,80 @@
+.mycontainer{
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+html, body, body>div.fullpage{
+  height:100%;
+}
+
+body {
+padding: 0px;
+}
+
+.center {
+margin-left: auto;
+margin-right: auto;
+}
+.center.navbar .nav,
+.center.navbar .nav > li {
+float:none;
+display:inline-block;
+*display:inline; /* ie7 fix */
+*zoom:1; /* hasLayout ie7 trigger */
+vertical-align: top;
+}
+.center.navbar-inner {
+text-align:center;
+}
+.center .dropdown-menu {
+text-align: left;
+}
+.navbar-inner {
+margin: 0 auto;
+font-family: Arial;
+font-size: 16px;
+}
+
+
+.navbar .nav > li > a {
+  color: white ;
+}
+
+.navbar .nav > li > a:hover {
+  color: #666;
+}
+
+.navbar .nav .active > a {
+  color: white;
+}
+
+.navbar .nav .active > a:hover {
+  color: #666;
+}
+
+.navbar .divider-vertical {
+height: 50px;
+margin: 0 9px;
+border-right: 1px solid #ffffff;
+border-left: 1px solid #f2f2f2;
+}
+
+.navbar-inverse .divider-vertical {
+border-right-color: #222222;
+border-left-color: #111111;
+}
+
+@media (max-width: 767px) {
+.navbar-collapse .nav > .divider-vertical {
+    display: none;
+  }
+}
+
+.bg { 
+  background: url(images/Until_the_Dark_flickr.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
