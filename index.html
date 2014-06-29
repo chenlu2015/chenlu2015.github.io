@@ -16,9 +16,9 @@
                <!-- Collect the nav links, forms, and other content for toggling -->
                <div class="">
                   <ul class="nav navbar-nav">
-                     <li class="active"><a href="#">About</a></li>
-                     <li><a href="#">Projects</a></li>
-                     <li><a href="#">Resume</a></li>
+                     <li class="active"><a href="#aboutme">About</a></li>
+                     <li><a href="#projects">Projects</a></li>
+                     <li><a href="#resume">Resume</a></li>
                      <li><a href="#">Contact</a></li>
                   </ul>
                </div>
@@ -30,9 +30,9 @@
             <img src="./images/chenlu.png" class="img-responsive center-block"></img>
          </div>
       </div>
-      <div class="fullpage mycontainer" style="background:url('./images/fixie.jpg') no-repeat center center fixed">
-         <div class="container">
-            <section class="wrapper wrapper-style3" style="margin-top: 20px; height:95%; margin-right:15px; position:absolute; overflow-y:scroll; overflow-x:hidden;">
+     
+         <div class="container" id="aboutme">
+            <section class="wrapper wrapper-style3">
                <div class="row">
                   <div class="col-md-4 text-center">
                      <img src="./images/me_full.png" height="300" width="300" class="img-circle border-img"></img>
@@ -58,11 +58,10 @@
               </div>
             </section>
          </div>
-      </div>
 
 
 
-         <div class="container">
+         <div class="container" id="projects">
             <section class="wrapper wrapper-style2" style="max-height:100%;">
                <div class="text-center">
                   <img class="img-responsive center-block" src="./images/thingsiveworkedon.png"></img>
@@ -71,39 +70,39 @@
                   <div class="row">
                      <div class="col-lg-6 col-md-6 portfolio-item">
                         <a href="#project-one">
-                        <img class="img-responsive" src="http://placehold.it/700x400">
+                        <img class="img-responsive" src="./images/nuwc.png">
                         </a>
-                        <h3><a href="#project-one">Project One</a>
+                        <h3><a href="http://meanprototype.herokuapp.com/">NU World Cup Registration</a>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                        <p>Redesigned Northwestern World Cup's homepage to also include a single page webapp (SPA) to increase the efficiency of the registration process. This webapp is built using the MEAN Stack, using MongoDB, Express.js, Angular.js, and Node.js.</p>
                      </div>
                      <div class="col-lg-6 col-md-6 portfolio-item">
                         <a href="#project-two">
-                        <img class="img-responsive" src="http://placehold.it/700x400">
+                        <img class="img-responsive" src="./images/game.png">
                         </a>
-                        <h3><a href="#project-two">Project Two</a>
+                        <h3><a href="#project-two">Assembly Language Game Development</a>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                        <p>This is a 2-D side scrolling game that implements simple physics, collision detection, and fixed point arithmetic. The program is coded for the Intel IA-32 architechture using MASM32 directives. It also implements fundamental optimization techniques including common subexpression elimination and loop unrolling.</p>
                      </div>
                   </div>
                </div>
-                              <div class="container">
+               <div class="container">
                   <div class="row">
                      <div class="col-lg-6 col-md-6 portfolio-item">
                         <a href="#project-one">
                         <img class="img-responsive" src="http://placehold.it/700x400">
                         </a>
-                        <h3><a href="#project-one">Project One</a>
+                        <h3><a href="#project-one">Neuroscience Research Automated Testing</a>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                        <p>Using Arduino and Matlab, we created scripts to train mice in certain behaviors and then test their innate olfactory system's sensitivities using custom built circuitry.</p>
                      </div>
                      <div class="col-lg-6 col-md-6 portfolio-item">
                         <a href="#project-two">
                         <img class="img-responsive" src="http://placehold.it/700x400">
                         </a>
-                        <h3><a href="#project-two">Project Two</a>
+                        <h3><a href="#project-two">Algorithmic Stock Analytics</a>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                        <p>Created a webapp using Ruby on Rails and Yahoo Query Language to analyze historical stock data and provide confidence intervals for long term estimated profitability.</p>
                      </div>
                   </div>
                </div>
@@ -112,10 +111,27 @@
          </div>
       
 
-      <div class="container text-center">
-      	<div class="" style="padding-top:20px">
-      		<div class="container" style="height:900px; width:800px;"><iframe width="90%" height="100%" src="./downloadables/ChenLu_Resume.pdf"></iframe></div>
+      <div class="container text-center" id="resume">
+      	<div class="resume-container wrapper wrapper-style3" style="padding-top:20px">
+      		<div class="container"><iframe src="./downloadables/ChenLu_Resume.pdf"></iframe></div>
       	</div>
       </div>
    </body>
 </html>
+
+<script type="text/javascript">
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 800);
+        return false;
+      }
+    }
+  });
+});
+</script>
