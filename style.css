@@ -3,8 +3,14 @@
   padding-left: 0;
   margin-right: auto;
   margin-left: auto;
+  height:100%;
+  position:relative;
 }
 
+body {
+  background-image: url(./images/subtle_halftone.png);
+
+}
 
 html, body, body>div.fullpage{
   height:100%;
@@ -81,17 +87,19 @@ text-shadow: 1px 1px 0px #fff;
 }
 
 .wrapper {
+margin-top:20px;
 font-family:'Open Sans', sans-serif;
 background-color: white;
-box-shadow: 7px 7px 2px #888888;
-border-radius: 20px;
+box-shadow: 0px 0px 20px #888888;
+border-radius: 0px;
 background-color: rgba(255, 255, 255, 0.9);
+
 
 }
 .container{
   width: 100%;
-
 }
+
 
 .bg { 
   background: url(images/Until_the_Dark_flickr.jpg) no-repeat center center fixed; 
