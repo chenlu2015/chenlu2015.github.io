@@ -14,8 +14,6 @@ body {
 
 html, body, body>div.fullpage{
   height:100%;
-  overflow:scroll;
-  -webkit-overflow-scrolling:touch;
 }
 
 .center {
