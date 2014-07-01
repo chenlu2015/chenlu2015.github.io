@@ -196,8 +196,8 @@ button2 {
 }
 
 
-button2:active {
-  top:-3px;
+button2:hover {
+  top:-5px;
 }
 
 button2:before {
